@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ defaultText }}</p>
+    <p>Lets get you A GOOD BOY</p>
   </div>
 </template>
 
@@ -9,17 +9,15 @@ export default {
   name: 'HelloWorld',
   mounted () {
     browser.runtime.sendMessage({})
-  },
-  computed: {
-    defaultText () {
-      return browser.i18n.getMessage('extName')
-    }
   }
 }
 </script>
 
 <style scoped>
 p {
-  font-size: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Titillium Web', sans-serif;
 }
 </style>
